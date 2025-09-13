@@ -95,4 +95,22 @@ fun main() {
     if (a == b && b == c) {
         println("Джекпот!")
     }
+
+    //Task 9
+    var bal = Random.nextInt(100, 1001)
+    var d = 1
+
+    println("Начальный баланс: $bal")
+    while (bal > 0) {
+        val w = Random.nextInt(10, 101)
+        if (w > bal) {
+            println("День $d: снятие $bal (остаток: 0)")
+            bal = 0
+        } else {
+            bal -= w
+            println("День $d: снятие $w (остаток: $bal)")
+        }
+        d++
+    }
+    println("Деньги закончились!")
 }
