@@ -44,5 +44,11 @@ fun main() {
         cur--
     }
 
+    //Task 4
+    fun genPass(): String {
+        val len = Random.nextInt(8, 17)
+        val chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#\$%^&*"
+        return (1..len).map { chars.random() }.joinToString("")
+    }
 
 }
