@@ -69,4 +69,15 @@ fun main() {
     println("Ответы: $color, $animal, $hobby")
     println("Отзыв: $randomFb")
 
+    //Task 6
+    print("Введите N: ")
+    val num = readln().toInt()
+    var s = 0
+    var i = 1
+    while (i <= num) {
+        s += i
+        i++
+    }
+    println("Сумма: $s")
+
 }
