@@ -34,4 +34,15 @@ fun main() {
     print("Введите строку: ")
     val t = readln()
     println("Гласных: ${countV(t)}")
+
+    //Task 3
+    print("Введите N: ")
+    val n = readln().toInt()
+    var cur = n
+    while (cur >= 1) {
+        println(cur)
+        cur--
+    }
+
+
 }
