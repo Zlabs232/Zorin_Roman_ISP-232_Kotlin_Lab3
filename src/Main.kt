@@ -80,4 +80,9 @@ fun main() {
     }
     println("Сумма: $s")
 
+    //Task 7
+    println("10 бросков:")
+    repeat(10) {
+        println("${it + 1}: ${Random.nextInt(1, 7)}")
+    }
 }
