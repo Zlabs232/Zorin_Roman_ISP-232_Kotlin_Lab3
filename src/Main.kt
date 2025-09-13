@@ -51,4 +51,22 @@ fun main() {
         return (1..len).map { chars.random() }.joinToString("")
     }
 
+    // Задание 5. Мини-опрос
+    print("Имя: ")
+    val name = readln()
+    print("Цвет: ")
+    val color = readln()
+    print("Животное: ")
+    val animal = readln()
+    print("Хобби: ")
+    val hobby = readln()
+
+    val feedbacks = listOf("Ты крутой, Дальше меньше!", "Хорошая работа!", "Отлично!", "Молодец!",)
+    val randomFb = feedbacks.random()
+
+    println("\n--- Результаты ---")
+    println("Имя: $name")
+    println("Ответы: $color, $animal, $hobby")
+    println("Отзыв: $randomFb")
+
 }
