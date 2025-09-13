@@ -85,4 +85,14 @@ fun main() {
     repeat(10) {
         println("${it + 1}: ${Random.nextInt(1, 7)}")
     }
+
+    //Task 8
+    val a = Random.nextInt(0, 6)
+    val b = Random.nextInt(0, 6)
+    val c = Random.nextInt(0, 6)
+
+    println("Слоты: $a $b $c")
+    if (a == b && b == c) {
+        println("Джекпот!")
+    }
 }
