@@ -50,6 +50,7 @@ fun main() {
         val chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#\$%^&*"
         return (1..len).map { chars.random() }.joinToString("")
     }
+    println("Пароль: ${genPass()}")
 
     // Задание 5. Мини-опрос
     print("Имя: ")
@@ -113,4 +114,18 @@ fun main() {
         d++
     }
     println("Деньги закончились!")
+
+    //Task 10
+    val days = listOf("Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс")
+    val temps = days.associateWith { Random.nextInt(-10, 31) }
+
+    println("\nТемпература:")
+    temps.forEach { (day, temp) ->
+        println("$day: $temp°C")
+    }
+
+    println("\nМорозные дни:")
+    temps.forEach { (day, temp) ->
+        if (temp < 0) println("$day: $temp°C")
+    }
 }
