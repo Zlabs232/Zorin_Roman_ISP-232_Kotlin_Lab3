@@ -128,6 +128,7 @@ fun main() {
         }
     }
 
+
     val dice1 = Random.nextInt(1, 7)
     val dice2 = Random.nextInt(1, 7)
     val sumDice = dice1 + dice2
